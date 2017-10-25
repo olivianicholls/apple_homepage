@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -16,64 +16,98 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* Original Code */
 html, body
 {
-    height: 100%;
-    min-height: 100%;
-    margin: 0 auto;
-    padding: 0;
-	max-width: 1440px;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+  font-family: 'Lato', sans-serif;
 }
+
 .container {
   position: relative;
 }
 .main {
-  background: url('http://web.archive.org/web/20140228113259im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg') 80% 100%  no-repeat;
-  height: 640px; 
+  margin-top: -100px;
+  background: url('your_verse_hero.jpg') 50% 100%  no-repeat;
+  height: 640px;
 }
 .main-text {
   position: absolute;
-  top: 25%;
-  left: 25%;
-  right: 25%;
+  top: 32%;
+  left: 19%;
   text-align: center;
-  font-family: 'Helvetica Neue', Arial;
   font-weight: 100;
   color: #fff;
+  word-spacing: 2px;
 }
-.heading {
-  font-size: 54px;
+#heading {
+  font-size: 60px;
+  padding-bottom: 10px;
+}
+#subheading-1 {
+  font-size: 32px;
+  line-height: 1.3;
+}
+#subheading-2 {
+  padding-top: 34px;
+}
+#subheading-link {
+  font-size: 24px;
+  color: #fff;
+}
+#subheading-2 a {
+  text-decoration: none;
+}
+#subheading-2 a:hover {
+  text-decoration: underline;
+}
+#play-btn {
+  margin: 0 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 40px;
+  border: 1px solid #fff;
+  vertical-align: middle;
+  background-color: rgba(232, 232, 232, 0.2);
+}
+.ion-ios-play-outline {
+  color: #fff;
+  font-size: 22px;
+  padding-left: 2px;
 }
 .secondary {
   height: 205px;
@@ -94,43 +128,51 @@ html, body
 }
 /* Footer */
 .footer {
-	height: 80px;
-	width: 1000px;
-	position: absolute;
-	left: 15%;
-	font-family: arial;
-	font-size: 10px;
-}
-.footer ul {
-	
+  height: 80px;
+  width: 1000px;
+  position: absolute;
+  left: 15%;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 .footer li {
-	display: inline;
-	border-right: 1px solid #bbb;
-	padding: 0 6px;
-	vertical-align: middle;
-}
-.footer p {
-	color: #888;
+  display: inline;
+  border-right: 1px solid #bbb;
+  padding: 0 6px;
+  vertical-align: middle;
 }
 .footer a {
-	text-decoration: none;
-	color: #08c;
+  text-decoration: none;
+  color: #08c;
 }
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer p {
+  color: #888;
+}
+.footer img {
+    width: 20px;
+    vertical-align: middle;
+}
+.footer li:last-child {
+  border: none;
+}
+
 .footer-left {
-	display: inline-block;
-	padding: 20px 0;
+  display: inline-block;
+  padding: 20px 0;
 }
 .footer-right {
-	float: right;
-	padding: 20px 0;
+  float: right;
+  padding: 20px 0;
 }
 .clear-left {
-	clear: left;
+  clear: left;
 }
 .clear-left p {
-	display: inline-block;
+  display: inline-block;
 }
 .terms-right {
-	display: inline-block;
+  display: inline-block;
 }
